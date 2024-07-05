@@ -1,0 +1,32 @@
+// SPDX-License-Identifier: MIT
+pragma solidity >=0.8.2 <0.9.0;
+
+contract add {
+    uint a;
+    uint b;
+    function addset(uint x) public {
+        a = x;
+    }
+    function add1set(uint y)public {
+        b = y;
+    }
+    function subtraction() public view returns(uint) {
+        uint sub;
+        sub = a-b;
+        return sub;
+    }
+    function addition() public view returns(uint) {
+        uint addi;
+        addi = a+b;
+        return addi;
+    }
+    function divide() public view returns(uint) {
+        uint div;
+        div = a/b;
+        return div;
+    }function multiply() public view returns(uint) {
+        uint mul;
+        mul = a*b;
+        return mul;
+    }
+}
