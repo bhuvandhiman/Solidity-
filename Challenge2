@@ -1,0 +1,23 @@
+
+// SPDX-License-Identifier: GPL-3.0
+
+pragma solidity >=0.7.0 <0.9.0;
+contract Valuation{
+    uint Eth;
+    uint Wei;
+    uint Gwei;
+     function sendEth(uint x) public{
+        Eth = x;
+        Gwei =x*(10**9);
+        Wei = x*(10**18);
+    }
+    function getEther() public view returns (uint){
+        return Eth;
+    }
+    function getWei() public view returns (uint){
+        return Wei;
+    }
+    function getGwei() public view returns (uint){
+        return Gwei;
+    }
+}
